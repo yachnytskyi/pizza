@@ -1,5 +1,6 @@
 from django.test import TestCase
-from dishes.models import Dish, Ingredient
+
+from dishes.models import Ingredient, Dish
 
 
 class TestModels(TestCase):
@@ -47,5 +48,3 @@ class TestModels(TestCase):
         dish3 = Dish.objects.get(title="Dish 3")
         ingredient2.dishes_list.add(dish1, dish2, dish3)
         self.assertEquals(list(ingredient2.dishes_list.all()), [dish1, dish2, dish3])
-
-

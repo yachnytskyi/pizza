@@ -34,3 +34,4 @@ pizza/__pycache__/urls.cpython-37.pyc
 pizza/__pycache__/wsgi.cpython-37.pyc
 .idea/vcs.xml
 *.pyc
+pizza/settings.py
